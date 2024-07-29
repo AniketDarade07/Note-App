@@ -1,0 +1,82 @@
+body {
+  background-image: url("https://images.freeimages.com/images/large-previews/913/blue-tones-1160620.jpg?fmt=webp&w=500");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.main {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.notes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+button{
+  background-color: rgb(96, 88, 88);
+  border-radius: 15px;
+}
+
+.dark{
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: flex-end;
+}
+
+
+@media screen and (max-width:768px){
+  #app {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .header {
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .main{
+    margin-top: 5rem;
+    gap: 1rem;
+    padding: 1px;
+
+  }
+
+  .notes{
+    grid-template-columns: 1fr;
+    padding: 2.5rem;
+   
+  }
+
+  .note {
+    width: auto;
+    
+
+  }
+}
+
